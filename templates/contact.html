@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,17 +16,17 @@
   <!--
     AOS STYLESHEET INIT
   -->
-  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
 
-  <link rel="icon" href="images/restaurant.webp" />
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="icon" href="{% static 'images/restaurant.webp' %}" />
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{% static 'css/translate.css' %}" rel="stylesheet" type="text/css" media="all" />
 
-  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/script.js"></script>
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+  <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' %}"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -134,7 +135,7 @@
                   <li class="active"><a href="contact.html">Contact</a></li>
                  <li style="width: max-content;">
                             <a id="google_translate_element"></a>
-                            <script src="js_files/translate.js"></script>
+                            <script src="{% static 'js_files/translate.js' %}"></script>
                 
                             <script type="text/javascript">
                                 function googleTranslateElementInit() {
@@ -159,7 +160,7 @@
   
   <a href="#" id="scrollDownButton">
     <div class="circle-background">
-        <img src="./images/bottomButton.webp" alt="Scroll Down">
+        <img src="{% static 'images/bottomButton.webp' %}" alt="Scroll Down">
     </div>
   </a>
 
@@ -351,12 +352,12 @@
     </div>
   </div>
   <!-- Footer -->
-  <script src="js/copyrightYear.js"></script>
-  <script src="js/SmoothScroll.min.js"></script>
+  <script src="{% static 'js/copyrightYear.js' %}"></script>
+  <script src="{% static 'js/SmoothScroll.min.js' %}"></script>
 
-  <script type="text/javascript" src="js/move-top.js"></script>
-  <script type="text/javascript" src="js/scrollToBottom.js"></script>
-  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/scrollToBottom.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
       $(".scroll").click(function (event) {
@@ -371,7 +372,7 @@
     });
   </script>
 
-  <script src="./js/aos.js"> 
+  <script src="{% static 'js/aos.js' %}"> 
   </script>
   <script>
     AOS.init({
@@ -386,7 +387,7 @@
       $().UItoTop({ easingType: "easeOutQuart" });
     });
   </script>
-  <script src="js/bootstrap.js"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
 </body>
 
 </html>

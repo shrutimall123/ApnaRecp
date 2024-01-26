@@ -1,4 +1,6 @@
-<!doctype html>
+{% load static %}
+
+<!doctype html>css
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,10 +17,10 @@
     <!--
       AOS STYLESHEET INIT
     -->
-    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
 
 
-    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}" />
     <!-- SEO ESSENTIALS -->
     <meta name="robots" content="index, follow" />
     <meta name="language" content="en" />
@@ -167,8 +169,8 @@
         </div>
       </div>
     </div>
-    <script src="js/signup.js" type="module"></script>
-    <script src="./js/aos.js"> 
+    <script src="{% static 'js/signup.js' %}" type="module"></script>
+    <script src="{% static 'js/aos.js' %}"> 
     </script>
     <script>
       AOS.init({

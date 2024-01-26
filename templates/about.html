@@ -20,14 +20,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!--
      AOS STYLESHEET INIT
     -->
-  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="{% static './css/aos.css' %}">
 
 
-  <link href="{% static 'css/translate.css' % }" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="{% static 'css/translate.css' %}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
 
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/script.js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js'%}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
   <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -115,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </button>
               <div class="w3_navigation_pos">
                 <div class="image-container">
-                  <a href="index.html"><img src="/images/food-logo.webp" class="small-image" alt="food-recipe" /></a>
+                  <a href="index.html"><img src="{% static '/food-logo.webp' %}" class="small-image" alt="food-recipe" /></a>
                 </div>
               </div>
               <div class="w3_navigation_pos">
@@ -174,7 +174,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                   <li style="width: max-content">
                     <a id="google_translate_element"></a>
-                    <script src="js_files/translate.js"></script>
+                    <script src="{% static 'js_files/translate.js' %}"></script>
 
                     <script type="text/javascript">
                       function googleTranslateElementInit() {

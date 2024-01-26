@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,27 +16,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <link rel="icon" href="images/restaurant.webp" />
     <link
-      href="css/bootstrap.css"
+      href="{% static 'css/bootstrap.css' %}"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
-      href="css/lightGallery.css"
+      href="{% static 'css/lightGallery.css' %}"
       type="text/css"
       media="all"
     />
     <link
-      href="css/translate.css"
+      href="{% static 'css/translate.css' %}"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -47,7 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--
       AOS STYLESHEET INIT
     -->
-    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
 
     <link href="//fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
     <link
@@ -204,7 +205,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li><a href="contact.html">Contact</a></li>
                     <li style="width: max-content">
                       <a id="google_translate_element"></a>
-                      <script src="js_files/translate.js"></script>
+                      <script src="{% static 'js_files/translate.js' %}"></script>
 
                       <script type="text/javascript">
                         function googleTranslateElementInit() {
@@ -234,7 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //bottom button added by preksha mahajan-->
   <a href="#" id="scrollDownButton">
     <div class="circle-background">
-        <img src="./images/bottomButton.webp" alt="Scroll Down">
+        <img src="{% static 'images/bottomButton.webp' %}" alt="Scroll Down">
     </div>
   </a>
     <!-- //bottom button added by preksha mahajan-->
@@ -297,13 +298,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Grilled Chicken Medley"
                 data-desc="Tender grilled chicken with a medley of veggies."
-                data-src="images/gallery1.webp"
+                data-src="{% static 'images/gallery1.webp' %}"
                 data-responsive-src="images/1.webp"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery1.webp"
+                      src="{% static 'images/gallery1.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -317,13 +318,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Tangy Mango Salad"
                 data-desc="Refreshing salad with ripe mango chunks."
-                data-src="images/gallery2.webp"
+                data-src="{% static 'images/gallery2.webp' %}"
                 data-responsive-src="images/7.webp"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery2.webp"
+                      src="{% static 'images/gallery2.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -337,13 +338,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Cheesy Garlic Breadsticks"
                 data-desc="Irresistible breadsticks with cheesy goodness."
-                data-src="images/gallery3.webp"
+                data-src="{% static 'images/gallery3.webp' %}"
                 data-responsive-src="images/5.webp"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery3.webp"
+                      src="{% static 'images/gallery3.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -357,13 +358,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Spicy Tofu Stir-Fry"
                 data-desc="Tofu stir-fried with a spicy kick."
-                data-src="images/gallery4.webp"
+                data-src="{% static 'images/gallery4.webp' %}"
                 data-responsive-src="images/6.webp"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery4.webp"
+                      src="{% static 'images/gallery4.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -377,13 +378,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Lemon Herb Salmon"
                 data-desc="Delicate salmon infused with zesty herbs."
-                data-src="images/gallery5.webp"
+                data-src="{% static 'images/gallery5.webp' %}"
                 data-responsive-src="images/8.webp"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery5.webp"
+                      src="{% static 'images/gallery5.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -397,13 +398,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Mouthwatering BBQ Ribs"
                 data-desc="Succulent ribs with smoky BBQ glaze"
-                data-src="images/gallery8.webp"
+                data-src="i{% static 'mages/gallery8.webp' %}"
                 data-responsive-src="images/9.webp"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery8.webp"
+                      src="{% static 'images/gallery8.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -417,13 +418,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Quinoa Veggie Bowl"
                 data-desc="Nutritious quinoa bowl with fresh veggies."
-                data-src="images/gallery7.webp"
+                data-src="{% static 'images/gallery7.webp' %}"
                 data-responsive-src="images/10.webp"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery7.webp"
+                      src="{% static 'images/gallery7.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -437,13 +438,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Creamy Pesto Pasta"
                 data-desc="Silky pasta coated in basil pesto sauce."
-                data-src="images/gallery9.webp"
-                data-responsive-src="images/11.webp"
+                data-src="{% static 'images/gallery9.webp' %}"
+                data-responsive-src="{% static 'images/11.webp' %}"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery9.webp"
+                      src="{% static 'images/gallery9.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -457,13 +458,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <li
                 data-title="Choco-Berry Bliss"
                 data-desc="Decadent chocolate-berry dessert delight."
-                data-src="images/gallery6.webp"
+                data-src="{% static 'images/gallery6.webp' %}"
                 data-responsive-src="images/12.webp"
               >
                 <div class="w3_w3l_gallery_grid box">
                   <a href="#">
                     <img
-                      src="images/gallery6.webp"
+                      src="{% static 'images/gallery6.webp' %}"
                       alt=" "
                       class="img-responsive"
                     />
@@ -652,8 +653,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </script>
     <!-- Footer -->
-    <script src="js/copyrightYear.js"></script>
-    <script src="js/lightGallery.js"></script>
+    <script src="{% static 'js/copyrightYear.js' %}"></script>
+    <script src="{% static 'js/lightGallery.js' %}"></script>
     <script>
       $(document).ready(function () {
         $("#lightGallery").lightGallery({
@@ -665,11 +666,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
       });
     </script>
-    <script src="js/SmoothScroll.min.js"></script>
+    <script src="{% static 'js/SmoothScroll.min.js' %}"></script>
 
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/scrollToBottom.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/scrollToBottom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
@@ -684,7 +685,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     </script>
 
-    <script src="./js/aos.js"> </script>
+    <script src="{% static 'js/aos.js' %}"> </script>
     <script>
       AOS.init({
         duration: 1000, 
@@ -692,7 +693,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     </script>
 
-    <script src="./js/scrollReveal.js"></script>
+    <script src="{% static 'js/scrollReveal.js' %}"></script>
 
     <script>
       ScrollReveal().reveal('#lightGallery > li', { interval: 200, reset: true });
@@ -703,6 +704,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $().UItoTop({ easingType: "easeOutQuart" });
       });
     </script>
-    <script src="js/bootstrap.js"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
   </body>
 </html>
